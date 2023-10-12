@@ -10,8 +10,73 @@
 */
 body {
   background-color: #d9c289;
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+}
+
+h1, h2 { 
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.imgbox img, #portrait {
+  height: 200px;
+}
+
+/*  For troubleshooting 
+.imgbox, .picframe, .caption {
+  border: solid;
+  border-color: black;
+}
+*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.imgbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/*
+.imgbox img {
+  display: block;
+}
+*/
+
+.picframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p.caption {
+  text-align: center;
+  align-self: center;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+
+#copyright {
+  vertical-align: bottom;
+}
+
+.pagefoot {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 88%;
+}
+
+footer > #copyright {
+  font-size: small;
+  font-family: 'Source Sans 3', sans-serif;
 }
